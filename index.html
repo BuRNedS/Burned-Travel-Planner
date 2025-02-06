@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Travel Planner</title>
+    <link rel="icon" href="https://media.istockphoto.com/id/1304677392/photo/locator-mark-of-map-and-location-pin-or-navigation-icon-sign-on-blue-background-with-search.jpg?s=1024x1024&w=is&k=20&c=Cy1tdyFGOSXmUklRWhsumHejL893YijytRDK9DhaxBs=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Condensed:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Travel Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trip History</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#profile">User Profile</a></li>
+                <li><a href="#summary">Summary</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Trip Details Section -->
+    <div id="details" class="section-container">
+        <h2>Trip Details</h2>
+        <form>
+            <label for="destination" style = " margin-left: 56px">Destination:</label>
+            <input type="text" id="destination" name="destination" required><br>
+            
+            
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required><br>
+            
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required><br>
+            
+            
+            <label for="preferences">Preferences:</label>
+            <select id="preferences" name="preferences">
+                <option value="beach">Beach</option>
+                <option value="mountains">Mountains</option>
+                <option value="city">City</option>
+                <option value="countryside">Countryside</option>
+            </select><br>
+            
+            <button type="submit">Submit</button>
+            <div id="destination-error" style="color: red;"></div>
+            <div id="date-error" style="color: red;"></div>
+            
+        </form>
+    </div>
+
+    <!-- User Profile Section -->
+<div id="profile" class="section-container">
+    <h2>User Profile</h2>
+    <div class="profile-content" style="margin-top: -29px">
+        <img src="https://media.giphy.com/media/Ibga4LPOwy339xnPCY/giphy.gif?cid=790b7611ax8xbgr1fqtqcelssj5pns8387fbw9nz3zp0i07s&ep=v1_gifs_search&rid=giphy.gif&ct=g"  alt="User Profile Image" aria-label="Profile Image">
+        <p style="text-align: center;">Welcome to my travel planner profile! As an avid adventurer, I’m passionate about exploring the world's diverse landscapes and cultures. Whether it’s a relaxing beach escape, an exhilarating mountain trek, or an urban exploration, every journey holds a special story. Here, I aim to help fellow travelers design personalized itineraries, discover hidden gems, and travel smarter. From travel tips to budget planning, I believe that traveling should be fun, memorable, and hassle-free. Let’s explore the world together!</p>
+    </div>
+</div>
+
+
+    <!-- Summary Section -->
+    <div id="summary" class="section-container">
+        <h2>Summary</h2>
+        <p>Discover seamless journeys with personalized itineraries, trip cost details, and comprehensive destination information. Let’s make unforgettable travel memories together!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact info: maxburnedtravels@agency.com</p>
+        <p>&copy; 2025 Smart Travel Planner. All rights reserved.</p>
+    </footer>
+    
+    <script src="validation.js"></script>
+</body>
+</html>

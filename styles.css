@@ -1,0 +1,153 @@
+body {
+    background-color: #A1E3F9; /* Light blue background */
+    color: #333333; /* Dark text color */
+    font-family: Arial, sans-serif;
+    
+}
+
+h1, h2 {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #f3f5f7;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+/* Using CSS Grid */
+.section-container {
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    background-color: #f3f5f7;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+/* Form Styling */
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+input:focus, select:focus {
+    border: 2px solid #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+button[type="submit"]:disabled {
+    background-color: #007bff !important;
+    color: white !important;
+    cursor: not-allowed;
+    opacity: 1 !important;
+}
+
+button[type="submit"]:disabled:hover {
+    background-color: #007bff !important;
+}
+
+
+footer {
+    background-color: #007bff;
+    margin: 0px 0px;
+    padding: 15px 15px;
+    text-align: center;
+    color: white;
+}
+
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile h2 {
+    text-align: center;
+    width: 100%; /* Ensure the heading spans the full width */
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.profile-content img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-content p {
+    flex: 1;
+    text-align: justify;
+}
+
+
+h2{
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+    
+    footer {
+        background-color: #f0f8ff
+        }
+}
